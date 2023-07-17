@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Abbreviation to Full Form Converter</title>
+</head>
+<body>
+	<label for="inputBox">Enter an abbreviation:</label>
+   <input type="text" id="inputBox" name="inputBox">
+	
+	
+
+	<script>
+		var abbreviations = {
+			"lol": "laugh out loud",
+			"brb": "be right back",
+			"btw": "by the way",
+			"LOL": "laugh out loud",
+			"BRB": "be right back",
+			"BTW": "by the way",
+			"BTS": "behind the scene",
+			"CMW": "change my view",
+			"FLB": "Flashback like friday",
+			"FTW": "For the win",
+			"FUD": "fear, uncertainity & doubt",
+			"IMO": "In my opinion",
+			"IMHO": "In my humble opinion",
+			"ROFL": "Rolling on the floor laughing",
+			"TFTF": "Thanks for following",
+			"WFH": "Working from home",
+			"IDC": "I don't care",
+			"IDK": "I don't know",
+			"IRL": "In real life",
+			"JK": "Just kidding",
+			"LMAO": "Laughing my Ass off",
+			"LMK": "Let me know",
+			"NBD": "No big deal",
+			"NM": "Not much",
+			"NSFW": "Not safe for work",
+			"JIC": "Just in case",
+			"OTP": "One true pairing",
+			"IANAD": "I'm not a doctor",
+			"WDYM": "What do you mean",
+			"WDYMBT": "What do you mean by that",
+			"bts": "behind the scene",
+			"cmw": "change my view",
+			"flb": "Flashback like friday",
+			"ftw": "For the win",
+			"fud": "fear, uncertainity & doubt",
+			"imo": "In my opinion",
+			"imho": "In my humble opinion",
+			"rofl": "Rolling on the floor laughing",
+			"tftf": "Thanks for following",
+			"wfh": "Working from home",
+			"idc": "I don't care",
+			"idk": "I don't know",
+			"irl": "In real life",
+			"jk": "Just kidding",
+			"lmao": "Laughing my Ass off",
+			"lmk": "Let me know",
+			"nbd": "No big deal",
+			"nm": "Not much",
+			"nsfw": "Not safe for work",
+			"jic": "Just in case",
+			"otp": "One true pairing",
+			"ianad": "I'm not a doctor",
+			"wdym": "What do you mean",
+			"wdymbt": "What do you mean by that",
+			"LYLAS": "Love you like a sister",
+			"NVM": "Never mind",
+			"NP": "No problem",
+			"TYVM": "Thank you very much",
+			"WYWH": "Wish you were here",
+			"POV": "Point of view",
+			"ROTF": "Rolling on the floor",
+			"TIA": "Thanks in advance",
+			"SITD": "Still in the dark",
+			"OMG": "Oh my god",
+			"OIC": "Oh, I see",
+			"STBY": "Sucks to be you",
+			"SBY": "Somebody",
+			"TTYL": "Talk to you later",
+			"PPL": "People",
+			"THX": "Thanks",
+			"YW": "Your welcome",
+			"lylas": "Love you like a sister",
+			"nvm": "Never mind",
+			"np": "No problem",
+			"tyvm": "Thank you very much",
+			"wywh": "Wish you were here",
+			"pov": "Point of view",
+			"rotf": "Rolling on the floor",
+			"tia": "Thanks in advance",
+			"sitd": "Still in the dark",
+			"omg": "Oh my god",
+			"oic": "Oh, I see",
+			"stby": "Sucks to be you",
+			"sby": "Somebody",
+			"ttyl": "Talk to you later",
+			"ppl": "People",
+			"thx": "Thanks",
+			"yw": "Your welcome",
+		};
+		
+		var inputBox = document.getElementById("inputBox");
+		inputBox.addEventListener("input", function() {
+			var inputText = inputBox.value;
+			var fullForm = abbreviations[inputText.toLowerCase()];
+			if (fullForm) {
+				inputBox.value = fullForm;
+			}
+		});
+	</script>
+</body>
+</html>
